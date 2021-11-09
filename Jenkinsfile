@@ -23,6 +23,12 @@ pipeline {
             }
         }
         
+        stage('Upload') {
+            steps {
+                echo 'Uploading...'
+            }
+        }
+        
         stage('Reports') {
             steps {
                 echo 'Criando reports...'
